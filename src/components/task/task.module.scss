@@ -1,0 +1,18 @@
+.taskContainer {
+  display: flex;
+  width: 100%;
+  margin: 20px 0;
+  position: relative;
+}
+.progressbar {
+  width: 100%;
+}
+.deleteBtn {
+  margin-left: 10px;
+}
+.helpText {
+  position: absolute;
+  top: 0.5rem;
+  left: 10px;
+  color: grey;
+}
