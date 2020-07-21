@@ -170,6 +170,7 @@ class ServerPage extends React.Component {
               <p>{item.task ? "Working.." : "Idle"}</p>
 
               <Button
+                variant="outline-primary"
                 className={styles.removeServerBtn}
                 onClick={() => this.removeServer(item.serverId)}
                 disabled={servers.length < 2 || item.task}
