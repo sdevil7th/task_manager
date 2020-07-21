@@ -195,6 +195,9 @@ class ServerPage extends React.Component {
             Add Tasks
           </Button>
         </div>
+        <p className={styles.helpingText}>
+          Remaining Tasks: {this.state.tasks.length}
+        </p>
         <div className={styles.tasksContainer}>
           {tasks.map((item) => (
             <Task
