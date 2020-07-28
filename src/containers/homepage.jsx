@@ -125,6 +125,9 @@ class ServerPage extends React.Component {
     }
 
     idleServers.forEach((item, index) => {
+      if (!unassignedTasks[index]) {
+        return;
+      }
       const taskIndex = tasks.findIndex(
         (elem) => elem.taskId === unassignedTasks[index].taskId
       );
